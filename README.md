@@ -7,3 +7,7 @@ Human language offers a unique unconstrained approach to probe through questions
 # Social-IQ Statistics
 
 ![alt text](https://github.com/A2Zadeh/Social-IQ/blob/master/stats.png)
+
+
+
+# Acquiring the data
