@@ -15,5 +15,19 @@ the distribution of question length in terms of number of words. The average len
 
 **Multimedia Statistics**: Social-IQ dataset consists of a total of 1,250 videos from YouTube. Figure 2 (f) demonstrates an overview of categories of the videos in Social-IQ. There is a total of 1,239 minutes of annotated video content (across 10,529 minutes of full videos). Figure 2 (d) shows the distribution of number of characters in videos. All the videos in the Social-IQ dataset contain manual transcriptions with detailed timestamps.
 
-# Acquiring the data (Mid-June 2019)
-The data will be released as a part of our CMU Multimodal SDK (https://github.com/A2Zadeh/CMU-MultimodalSDK) on June 15th 2019. The data files will be released as computatinal sequences for fast development of machine learning models. We will also release the raw data. The official website for the Social-IQ will also be released on June 15th. 
+# Acquiring the data
+The data will be released as a part of our CMU Multimodal SDK (https://github.com/A2Zadeh/CMU-MultimodalSDK). To download all the processed data, simply use:
+
+```python
+>>> from mmsdk import mmdatasdk
+>>> socialiq_highlevel=mmdatasdk.mmdataset(mmdatasdk.socialiq.highlevel,'socialiq/')
+>>> folds=mmdatasdk.socialiq.standard_train_fold,mmdatasdk.socialiq.standard_valid_fold
+``` 
+
+Social-IQ 1.0 has no public test data, since the test set will be used for challenges and workshops. We are planning to release a public test set soon on Social-IQ 1.1.  
+
+You can also download the raw data here: 
+
+
+# Running the Tensor-MFN code
+
