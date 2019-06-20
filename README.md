@@ -31,4 +31,4 @@ You can also download the raw data [here](http://immortal.multicomp.cs.cmu.edu/r
 
 # Running the Tensor-MFN code
 
-Will be released soon! 
+Please find the code in the code folder. First run the dl_and_align.py to download the dataset. Subsequently, run the tmfn_bert.py. 
