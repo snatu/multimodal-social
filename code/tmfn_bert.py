@@ -19,6 +19,11 @@ from random import shuffle
 import time
 
 
+print ("Tensor-MFN code for Social-IQ")
+print ("Yellow warnings fro SDK are ok!")
+print ("If you do happen to get nans, then the reason is the most recent acoustic features update. You can replace nans and infs in acoustic at your discretion.")
+
+
 #Loading the data of Social-IQ
 #Yellow warnings fro SDK are ok!
 if os.path.isdir("./deployed/") is False:
@@ -28,9 +33,9 @@ if os.path.isdir("./deployed/") is False:
  
 paths={}
 paths["QA_BERT_lastlayer_binarychoice"]="./socialiq/SOCIAL-IQ_QA_BERT_LASTLAYER_BINARY_CHOICE.csd"
-paths["DENSENET161_1FPS"]="./deployed/DENSENET161_1FPS.csd"
-paths["Transcript_Raw_Chunks_BERT"]="./deployed/Transcript_Raw_Chunks_BERT.csd"
-paths["Acoustic"]="./deployed/Acoustic.csd"
+paths["DENSENET161_1FPS"]="./deployed/SOCIAL_IQ_DENSENET161_1FPS.csd"
+paths["Transcript_Raw_Chunks_BERT"]="./deployed/SOCIAL_IQ_TRANSCRIPT_RAW_CHUNKS_BERT.csd"
+paths["Acoustic"]="./deployed/SOCIAL_IQ_COVAREP.csd"
 social_iq=mmdatasdk.mmdataset(paths)
 social_iq.unify() 
 
@@ -113,7 +118,9 @@ def reshape_to_correct(_input,shape):
 	return _input[:,None,None,:].expand(-1,shape[1],shape[2],-1).reshape(-1,_input.shape[1])
 
 def calc_accuracy(correct,incorrect):
-	return numpy.array(correct>incorrect,dtype="float32").sum()/correct.shape[0]
+	correct_=correct.cpu()
+	incorrect_=incorrect.cpu()
+	return numpy.array(correct_>incorrect_,dtype="float32").sum()/correct.shape[0]
 
 def feed_forward(keys,q_lstm,a_lstm,v_lstm,t_lstm,ac_lstm,mfn_mem,mfn_delta1,mfn_delta2,mfn_tfn,preloaded_data=None):
 
@@ -181,7 +188,7 @@ if __name__=="__main__":
 	#if you have enough RAM, specify this as True - speeds things up ;)
 	preload=True
 	bs=32
-	trk,dek=mmdatasdk.socialiq.standard_train_fold,mmdatasdk.socialiq.standard_valid_fold
+	trk,dek=mmdatasdk.socialiq.standard_folds.standard_train_fold,mmdatasdk.socialiq.standard_folds.standard_valid_fold
 	#This video has some issues in training set
 	bads=['f5NJQiY9AuY','aHBLOkfJSYI']
 	folds=[trk,dek]
