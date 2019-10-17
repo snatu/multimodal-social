@@ -25,7 +25,7 @@ The data will be released as a part of our CMU Multimodal SDK (https://github.co
 >>> folds=mmdatasdk.socialiq.standard_train_fold,mmdatasdk.socialiq.standard_valid_fold
 ``` 
 
-Social-IQ 1.0 has no public test data, since the test set will be used for challenges and workshops. We are planning to release a public test set of 100 videos soon on Social-IQ 1.1.  
+Social-IQ 1.0 has no public test data, since the test set will be used for challenges and workshops. However, we are releasing a public test set [here](http://immortal.multicomp.cs.cmu.edu/raw_datasets/SocialIQ_PUBLIC_TEST.zip). This public test is different than the challenge test set, which the original paper reports results on. To submit to challenge test set, please contact us by email. 
 
 You can also download the raw data [here](http://immortal.multicomp.cs.cmu.edu/raw_datasets/Social-IQ.zip)
 
