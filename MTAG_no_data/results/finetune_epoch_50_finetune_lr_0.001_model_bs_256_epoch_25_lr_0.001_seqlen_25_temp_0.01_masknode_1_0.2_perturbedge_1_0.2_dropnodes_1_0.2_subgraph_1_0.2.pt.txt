@@ -1,0 +1,274 @@
+Tensor-MFN code for Social-IQ
+Yellow warnings fro SDK are ok!
+If you do happen to get nans, then the reason is the most recent acoustic features update. You can replace nans and infs in acoustic at your discretion.
+
+Trial 0
+Running finetuning from pretrained model
+Loading pretrained model from /home/shounak_rtml/11777/MTAG/saved_model/model_bs_256_epoch_25_lr_0.001_seqlen_25_temp_0.01_masknode_1_0.2_perturbedge_1_0.2_dropnodes_1_0.2_subgraph_1_0.2.pt
+Building loaders for social
+Loading processed data
+Loading processed data
+Regenerating graphs for social_train
+Total:  721
+Num skipped:  0
+Num smaller:  0
+Num incorrectly sorted:  4
+Regenerating graphs for social_dev
+Total:  98
+Num skipped:  0
+Num smaller:  0
+Num incorrectly sorted:  2
+Training...
+Epoch 0
+Train Acc: 0.4929
+Train loss:0.5007
+Dev Acc: 0.3702
+Dev loss: 0.5000
+Epoch 1
+Train Acc: 0.4983
+Train loss:0.5000
+Dev Acc: 0.3840
+Dev loss: 0.5000
+Epoch 2
+Train Acc: 0.4953
+Train loss:0.5000
+Dev Acc: 0.3839
+Dev loss: 0.5004
+Epoch 3
+Train Acc: 0.5173
+Train loss:0.4971
+Dev Acc: 0.4961
+Dev loss: 0.4801
+Epoch 4
+Train Acc: 0.5281
+Train loss:0.4834
+Dev Acc: 0.4665
+Dev loss: 0.4630
+Epoch 5
+Train Acc: 0.5592
+Train loss:0.4419
+Dev Acc: 0.5379
+Dev loss: 0.4092
+Epoch 6
+Train Acc: 0.5700
+Train loss:0.4092
+Dev Acc: 0.5592
+Dev loss: 0.3769
+Epoch 7
+Train Acc: 0.5869
+Train loss:0.3831
+Dev Acc: 0.5634
+Dev loss: 0.3566
+Epoch 8
+Train Acc: 0.5885
+Train loss:0.3731
+Dev Acc: 0.5483
+Dev loss: 0.3635
+Epoch 9
+Train Acc: 0.5983
+Train loss:0.3549
+Dev Acc: 0.5605
+Dev loss: 0.3423
+Epoch 10
+Train Acc: 0.6069
+Train loss:0.3410
+Dev Acc: 0.5845
+Dev loss: 0.3276
+Epoch 11
+Train Acc: 0.6192
+Train loss:0.3235
+Dev Acc: 0.5850
+Dev loss: 0.3141
+Epoch 12
+Train Acc: 0.6195
+Train loss:0.3194
+Dev Acc: 0.5995
+Dev loss: 0.3004
+Epoch 13
+Train Acc: 0.6242
+Train loss:0.3117
+Dev Acc: 0.5901
+Dev loss: 0.3020
+Epoch 14
+Train Acc: 0.6310
+Train loss:0.3035
+Dev Acc: 0.5746
+Dev loss: 0.3086
+Epoch 15
+Train Acc: 0.6322
+Train loss:0.2939
+Dev Acc: 0.5718
+Dev loss: 0.3169
+Epoch 16
+Train Acc: 0.6396
+Train loss:0.2896
+Dev Acc: 0.5901
+Dev loss: 0.2928
+Epoch 17
+Train Acc: 0.6420
+Train loss:0.2840
+Dev Acc: 0.6029
+Dev loss: 0.2860
+Epoch 18
+Train Acc: 0.6502
+Train loss:0.2774
+Dev Acc: 0.5909
+Dev loss: 0.2931
+Epoch 19
+Train Acc: 0.6503
+Train loss:0.2725
+Dev Acc: 0.5934
+Dev loss: 0.2933
+Epoch 20
+Train Acc: 0.6475
+Train loss:0.2725
+Dev Acc: 0.6178
+Dev loss: 0.2831
+Epoch 21
+Train Acc: 0.6582
+Train loss:0.2624
+Dev Acc: 0.6140
+Dev loss: 0.2912
+Epoch 22
+Train Acc: 0.6578
+Train loss:0.2613
+Dev Acc: 0.6241
+Dev loss: 0.2812
+Epoch 23
+Train Acc: 0.6612
+Train loss:0.2605
+Dev Acc: 0.6030
+Dev loss: 0.2846
+Epoch 24
+Train Acc: 0.6632
+Train loss:0.2536
+Dev Acc: 0.6050
+Dev loss: 0.2911
+Epoch 25
+Train Acc: 0.6641
+Train loss:0.2540
+Dev Acc: 0.6106
+Dev loss: 0.2809
+Epoch 26
+Train Acc: 0.6686
+Train loss:0.2460
+Dev Acc: 0.6017
+Dev loss: 0.2846
+Epoch 27
+Train Acc: 0.6708
+Train loss:0.2437
+Dev Acc: 0.6023
+Dev loss: 0.2785
+Epoch 28
+Train Acc: 0.6735
+Train loss:0.2394
+Dev Acc: 0.5866
+Dev loss: 0.2928
+Epoch 29
+Train Acc: 0.6702
+Train loss:0.2404
+Dev Acc: 0.5932
+Dev loss: 0.2819
+Epoch 30
+Train Acc: 0.6720
+Train loss:0.2404
+Dev Acc: 0.6066
+Dev loss: 0.2768
+Epoch 31
+Train Acc: 0.6716
+Train loss:0.2401
+Dev Acc: 0.6016
+Dev loss: 0.2839
+Epoch 32
+Train Acc: 0.6439
+Train loss:0.2731
+Dev Acc: 0.6045
+Dev loss: 0.2812
+Epoch 33
+Train Acc: 0.6653
+Train loss:0.2504
+Dev Acc: 0.6094
+Dev loss: 0.2849
+Epoch 34
+Train Acc: 0.6618
+Train loss:0.2508
+Dev Acc: 0.6121
+Dev loss: 0.2756
+Epoch 35
+Train Acc: 0.6725
+Train loss:0.2397
+Dev Acc: 0.6042
+Dev loss: 0.2964
+Epoch 36
+Train Acc: 0.6751
+Train loss:0.2347
+Dev Acc: 0.6162
+Dev loss: 0.2838
+Epoch 37
+Train Acc: 0.6734
+Train loss:0.2380
+Dev Acc: 0.6256
+Dev loss: 0.2822
+Epoch 38
+Train Acc: 0.6830
+Train loss:0.2248
+Dev Acc: 0.6260
+Dev loss: 0.2842
+Epoch 39
+Train Acc: 0.6840
+Train loss:0.2265
+Dev Acc: 0.6155
+Dev loss: 0.2881
+Epoch 40
+Train Acc: 0.6907
+Train loss:0.2197
+Dev Acc: 0.6172
+Dev loss: 0.2808
+Epoch 41
+Train Acc: 0.6842
+Train loss:0.2247
+Dev Acc: 0.6120
+Dev loss: 0.2881
+Epoch 42
+Train Acc: 0.6889
+Train loss:0.2195
+Dev Acc: 0.6175
+Dev loss: 0.2852
+Epoch 43
+Train Acc: 0.6862
+Train loss:0.2230
+Dev Acc: 0.6275
+Dev loss: 0.2750
+Epoch 44
+Train Acc: 0.6922
+Train loss:0.2150
+Dev Acc: 0.6184
+Dev loss: 0.2938
+Epoch 45
+Train Acc: 0.6915
+Train loss:0.2154
+Dev Acc: 0.6393
+Dev loss: 0.2668
+Epoch 46
+Train Acc: 0.6998
+Train loss:0.2070
+Dev Acc: 0.6130
+Dev loss: 0.2968
+Epoch 47
+Train Acc: 0.7044
+Train loss:0.2022
+Dev Acc: 0.6197
+Dev loss: 0.2977
+Epoch 48
+Train Acc: 0.7050
+Train loss:0.2017
+Dev Acc: 0.6302
+Dev loss: 0.2933
+Epoch 49
+Train Acc: 0.7076
+Train loss:0.1977
+Dev Acc: 0.6327
+Dev loss: 0.2950
+Model parameters: 1783171
+Best val accs: [0.63930976]
+Best mean val accs: 0.6393097643097644

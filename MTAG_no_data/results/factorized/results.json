@@ -1,0 +1,1 @@
+"{'train_acc_best': [0], 'train_accs': [[]], 'train_losses': [[]], 'val_acc_best': array([0.77465986]), 'val_accs': [[0.7746598639455783]], 'val_losses': [[0.10460434]], 'model_params': 1783171, 'val_acc_best_mean': 0.7746598639455783}"
