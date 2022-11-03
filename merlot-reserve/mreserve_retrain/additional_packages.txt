@@ -1,0 +1,4 @@
+sudo apt-get install parallel
+sudo apt-get install libsndfile1
+pip install pysrt
+sudo apt install ffmpeg
