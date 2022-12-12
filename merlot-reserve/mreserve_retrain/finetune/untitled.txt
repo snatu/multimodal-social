@@ -1,0 +1,7 @@
+python3 tvqa_finetune.py ../../pretrain/configs/base.yaml  gs://merlotreserve/ckpts/base_resadapt -lr=5e-6 -ne=3 -scan_minibatch -output_grid_h=18 -output_grid_w=30 -wandb_run_name=tvqa_0.5 -percent_data=0.5
+
+python3 tvqa_finetune.py ../../pretrain/configs/base.yaml  /home/sakter/results/retrain/out/base.yaml/2022-09-26-21:15.59/ckpt_45792 -lr=5e-6 -ne=3 -scan_minibatch -output_grid_h=12 -output_grid_w=24 -wandb_run_name=tvqa_1.0_retrained
+
+python3 tvqa_finetune.py ../../pretrain/configs/base.yaml  /home/sakter/results/retrain/out/base.yaml/2022-09-29-09:31.00/ckpt_45792 -lr=5e-6 -ne=3 -scan_minibatch -output_grid_h=12 -output_grid_w=24 -wandb_run_name=tvqa_0.5_retrained -percent_data=0.5
+
+python3 tvqa_finetune.py ../../pretrain/configs/base.yaml  gs://merlotreserve/ckpts/base_resadapt -lr=5e-6 -ne=3 -scan_minibatch -output_grid_h=12 -output_grid_w=24 -wandb_run_name=tvqa_0.4 -percent_data=0.4 -output_ext

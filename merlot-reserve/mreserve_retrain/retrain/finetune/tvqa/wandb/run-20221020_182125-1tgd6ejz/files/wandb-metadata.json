@@ -1,0 +1,16 @@
+{
+    "os": "Linux-5.11.0-1028-gcp-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-10-20T18:21:29.276334",
+    "startedAt": "2022-10-20T18:21:25.830047",
+    "docker": null,
+    "cpu_count": 96,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "siq_retrain.py",
+    "codePath": "siq_retrain.py",
+    "host": "t1v-n-1cf6dd7e-w-0",
+    "username": "sheryl",
+    "executable": "/usr/bin/python3"
+}

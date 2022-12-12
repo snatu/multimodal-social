@@ -1,0 +1,102 @@
+wandb_version: 1
+
+_path:
+  desc: null
+  value: configs/base.yaml
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.3
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.13
+    start_time: 1662784700.972556
+    t:
+      1:
+      - 2
+      - 3
+      - 12
+      - 45
+      - 55
+      2:
+      - 2
+      - 3
+      - 12
+      - 45
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.8.13
+      5: 0.13.3
+      8:
+      - 5
+data:
+  desc: null
+  value:
+    fft_hop_length: 588
+    fft_window_size: 1536
+    lang_seq_len: 160
+    mask_rate: 0.25
+    num_audio2text_seqs: 1
+    num_audio_subsegments: 3
+    num_mels: 64
+    num_segment_groups: 2
+    num_segments: 16
+    num_text2audio_seqs: 1
+    num_text_seqs: 1
+    num_text_seqs_in_record: 1
+    num_text_spans_to_include: 48
+    num_train_files: 256
+    random_scale_max: 1.1
+    random_scale_min: 1.05
+    sample_rate: 22050
+    seq_len: 640
+    spec_size: 188
+    text_span_budget: 38
+    train_fns: /mnt/disks/persist/sakter/preprocessed/out/train{:03d}of256.tfrecord
+    use_audio_token_prob: 0.5
+device:
+  desc: null
+  value:
+    batch_size: 8
+    commit_every_nsteps: 50
+    iterations_per_loop: 15264
+    n_fns_per_cycle: 256
+    num_parallel_reads: 256
+    num_tpu_cores: 512
+    output_dir: /mnt/disks/persist/sakter/retrain/flagship~size=base~lr=4e-4/2022-09-09-21:37.13
+    shuffle_buffer_size: 4096
+    use_tpu: true
+    wandb_project: merlotreserve
+model:
+  desc: null
+  value:
+    audio_num_layers: 12
+    audio_patch_size: 2
+    audio_seq_length: 60
+    audio_token_length: 6
+    hidden_size: 768
+    joint_num_layers: 12
+    output_grid:
+    - 12
+    - 20
+    span_num_layers: 4
+    text_span_length: 15
+    use_bfloat16: true
+    vit_num_layers: 12
+    vit_patch_size: 16
+    vit_pooling_ratio: 2
+optimizer:
+  desc: null
+  value:
+    adafactor: false
+    beta_2: 0.98
+    eps: 1.0e-06
+    learning_rate: 0.0004
+    num_train_steps: 152640
+    num_warmup_steps: 7632
+    use_bfloat16_adam: true
+    use_bfloat16_weights: false
+    weight_decay_rate: 0.1
